@@ -1,6 +1,6 @@
 /**
  * jogo de cartas - Exemplo de uso do array
- * @author Arnaldo Victor Yamawaki Alves e Pedro Henrique Salomao Ventura
+ * @author Arnaldo Victor Yamawaki Alves e Pedro Henrique
  */
 let placar = frmplacar.txtplacar.value
 let ponto1 ,ponto2 ,ponto3 ,ponto4
@@ -414,11 +414,16 @@ if (sorteio2 >= 37 && 40)
 ponto2 = 10
 }
 
-frmplacar.txtplacar.value=ponto1 + ponto2
+placar = ponto1 + ponto2
+
 if (placar == 21){
-    alert("Você Ganhou")}
-if (placar > 21) {
-    alert("Você Perdeu")}
+    alert(placar + "Você Ganhou")}
+if (placar > 22) {
+    alert(placar+"Você Perdeu")}
+    else{
+        alert(placar+"continue")
+    }
+    frmplacar.txtplacar.value=ponto1 + ponto2
 }
 
 function maisUma(){
@@ -621,11 +626,16 @@ if (sorteio3 >= 37 && 40)
 {
 ponto3 = 10
 }
-frmplacar.txtplacar.value=ponto1 + ponto2 + ponto3
+placar = ponto1 + ponto2 + ponto3
+
 if (placar == 21){
-    alert("Você Ganhou")}
-if (placar > 21) {
-    alert("Você Perdeu")}
+    alert(placar + "Você Ganhou")}
+if (placar > 22) {
+    alert(placar+"Você Perdeu")}
+    else{
+        alert(placar+"continue")
+    }
+    frmplacar.txtplacar.value=ponto1 + ponto2 + ponto3
 }
 function maisoutra(){
     switch(sorteio4 ){
@@ -827,10 +837,12 @@ if (sorteio4 >= 37 && 40)
 {
 ponto4 = 10
 }
-frmplacar.txtplacar.value=ponto1 + ponto2 + ponto3 + ponto4
+placar = ponto1 + ponto2 + ponto3 + ponto4
 if (placar == 21){
-    alert("Você Ganhou")}
-if (placar > 21) {
-    alert("Você Perdeu")}
+    alert(placar + "Você Ganhou")}
+    else{
+        alert(placar+"Você Perdeu")
+    }
+    frmplacar.txtplacar.value=ponto1 + ponto2 + ponto3 + ponto4
 }
 
